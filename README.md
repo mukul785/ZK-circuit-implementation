@@ -8,12 +8,12 @@ Clone repo using `git clone https://github.com/mukul785/ZK-circuit-implementatio
 `npm i`
 
 ### Compile
-`npx hardhat circom` 
+`npx hardhat circom` <br>
 This will generate the **out** file with circuit intermediaries and generate the **CustomCircuitVerifier.sol** contract.
 
 ### Set-up
-Create a .env file in root directory and enter private key of wallet that will be used to test circuit on amoy testnet with MATIC test tokens.
-Then paste this after 'solidity' in `hardhat.config.ts` 
+Create a .env file in root directory and enter private key of wallet that will be used to test circuit on amoy testnet with MATIC test tokens.<br>
+Then paste this after 'solidity' in `hardhat.config.ts` <br>
 `
 networks: {
     amoy: {
@@ -22,9 +22,9 @@ networks: {
     },
   },
 `
-
+<br>
 ### Prove and Deploy
-Run `npx hardhat run scripts/deploy.ts --network amoy` to compile, deploy, verify the test signals in the circuit.
+Run `npx hardhat run scripts/deploy.ts --network amoy` to compile, deploy, verify the test signals in the circuit.<br>
 It should generate a contract address followed by 'true'.
 
 ### Verify on AMOY
